@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(arg):
-    return HttpResponse("Hello world")
+    return HttpResponse(3/2)
