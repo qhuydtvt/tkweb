@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import dj_database_url
+import mongoengine
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -75,10 +76,15 @@ WSGI_APPLICATION = 'techkids.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': ''
     }
 }
+
+MONGO_HOST = "103.1.209.92"
+MONGO_PORT = 27017
+MONGO_DB_NAME = "techkids"
+
+mongoengine.connect(MONGO_DB_NAME, host= MONGO_HOST, port=MONGO_PORT)
 
 AUTH_PASSWORD_VALIDATORS = (
     {
