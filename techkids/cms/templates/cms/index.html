@@ -1,4 +1,5 @@
-﻿<!doctype html>
+﻿{%load staticfiles %}
+<!doctype html>
 <html>
 	<head>
 		<title>TechKids - Cộng đồng lập trình viên chất lượng cao</title>
@@ -11,15 +12,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300,300italic,100&subset=latin,latin-ext,vietnamese" rel="stylesheet" type="text/css">
 		
 		<!-- CSS #self -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/fadeIn.css">
+		<link rel="stylesheet" type="text/css" href='{% static "cms/css/style.css" %}'>
+		<link rel="stylesheet" type="text/css" href='{% static "cms/css/fadeIn.css" %}'>
 		
 		<!-- JS Libs -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		
 		<!-- JS #self -->
-		<script src="js/main.js"></script>
+		<script src='{% static "cms/js/main.js" %}'></script>
 	</head>
 	<body>
 		<nav id="main_nav" class="navbar navbar-default navbar-fixed-top navbar_at_top">
@@ -46,7 +47,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="./"><span class="brand_logo"><img src="img/TechkidBrandColor.png" alt="TechKids"/></span></a>
+					<a class="navbar-brand" href="./"><span class="brand_logo"><img src='{% static "cms/img/TechkidBrandColor.png"%}' alt="TechKids"/></span></a>
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -104,7 +105,7 @@
 		
 		<section id="intro" class="intro stars">
 			<div class="container center_inline_list">
-				<img class="fade_up" src="img/TechKidsLogo.png" alt="TechKids">
+				<img class="fade_up" src='{% static "cms/img/TechKidsLogo.png"%}' alt="TechKids">
 			</div>
 		</section>
 		
@@ -157,12 +158,12 @@
 				</div>
 				<div class="row">
 					<ul class="partners_list center_inline_list col-sm-12">
-						<li><a href="http://namconn10.com/"><img class="fade_scale" src="img/PartnersLogo/Topica.png" alt="Topica"></img></a></li>
-						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src="img/PartnersLogo/Samsung.png" alt="Samsung"></img></a></li>
-						<li><a href="http://bkav.com.vn"><img class="fade_scale" src="img/PartnersLogo/BKAV.png" alt="BKAV"></img></a></li>
-						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src="img/PartnersLogo/TinhVan.png" alt="TinhVan"></img></a></li>
-						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src="img/PartnersLogo/Viettel.png" alt="Viettel"></img></a></li>
-						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src="img/PartnersLogo/Fpt.png" alt="FPT"></img></a></li>
+						<li><a href="http://namconn10.com/"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/Topica.png"%}' alt="Topica"></img></a></li>
+						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/Samsung.png"%}' alt="Samsung"></img></a></li>
+						<li><a href="http://bkav.com.vn"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/BKAV.png"%}' alt="BKAV"></img></a></li>
+						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/TinhVan.png"%}' alt="TinhVan"></img></a></li>
+						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/Viettel.png"%}' alt="Viettel"></img></a></li>
+						<li><a href="http://techkids.edu.vn/"><img class="fade_scale" src='{% static "cms/img/PartnersLogo/Fpt.png"%}' alt="FPT"></img></a></li>
 					</ul>
 				</div>
 			</div>
@@ -342,7 +343,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
-						<img class="footer_logo" src="img/TechkidBrandGrey.png"/>
+						<img class="footer_logo" src='{% static "cms/img/TechkidBrandGrey.png"%}'/>
 						<p class="socials_list">
 							<a href="skype:techkidsvn?chat" class="fa fa-skype"></a>
 							<a href="https://www.facebook.com/Techkids.Code.the.Change" class="fa fa-facebook-square"></a>
