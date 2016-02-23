@@ -1,4 +1,6 @@
-﻿{% get_template('header.html') %}
+﻿{% extends "base.html" %}
+
+{% block content %}
 <section id="intro" class="intro stars">
 	<div class="container center_inline_list">
 		<img class="fade_up" src='{% static "cms/img/TechKidsLogo.png"%}' alt="TechKids">
@@ -235,4 +237,5 @@
 	</div>
 	</section>
 -->
-{% get_template('footer.html') %}
+
+{% endblock %}
