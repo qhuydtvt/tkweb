@@ -506,6 +506,11 @@ section.stars .section_title:after{
 	float: left;
 	margin-right: 15px;
 	width: 200px;
+	overflow: hidden;
+}
+
+.user_thumbnail img{
+	width: 100%;
 }
 
 .title_image{
