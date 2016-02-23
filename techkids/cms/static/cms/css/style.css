@@ -490,12 +490,14 @@ section.stars .section_title:after{
 
 .users_list{
 	font-size: 1.4rem;
-	padding: 0;
+	padding: 20px 0;
+	margin: 0;
 }
 
 .users_list li{
 	list-style: none;
 	overflow: hidden;
+	margin-bottom: 10px;
 }
 
 .users_list h5{
@@ -506,7 +508,7 @@ section.stars .section_title:after{
 	border-radius: 100%;
 	float: left;
 	margin-right: 15px;
-	width: 200px;
+	width: 100px;
 	overflow: hidden;
 }
 
@@ -523,11 +525,11 @@ section.stars .section_title:after{
 }
 
 .list-group-item-heading{
-	font-size: 1em;
+	font-size: 2rem;
 }
 
 .list-group-item-text{
-	font-size: 0.8em;
+	font-size: 1.4rem;
 }
 
 @media screen and (min-width: 768px){
