@@ -195,6 +195,14 @@ footer.footer{
 	font-size: 2.3rem;
 }
 
+section.block_section{
+	padding: 40px 0;
+}
+
+section.page_title{
+	padding: 60px 0;
+}
+
 section.stars {
 	background-clip: border-box;
 	background-attachment: fixed;
@@ -223,10 +231,6 @@ section.intro .container:before{
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-}
-
-.about_us{
-	padding: 40px 0;
 }
 
 .section_title{
@@ -336,7 +340,6 @@ section.stars .section_title:after{
 }
 
 .partners{
-	padding: 40px 0;
 	background-color: #F7F7F7;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -374,10 +377,6 @@ section.stars .section_title:after{
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-}
-
-.teachers{
-	padding: 40px 0;
 }
 
 .teachers_list{
@@ -458,10 +457,6 @@ section.stars .section_title:after{
 .join_us .btn{
 	margin: 40px 10px 0;
 	float: none;
-}
-
-.newsevent{
-	padding: 60px 0;
 }
 
 .news_thumbnail{
