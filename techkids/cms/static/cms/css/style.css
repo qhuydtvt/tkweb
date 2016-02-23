@@ -488,18 +488,24 @@ section.stars .section_title:after{
 	font-size: 4rem;
 }
 
+.users_list{
+	font-size: 1.4rem;
+	padding: 0;
+}
+
+.users_list li{
+	list-style: none;
+}
+
+.users_list h5{
+	font-size: 2rem;
+}
+
 .user_thumbnail{
 	border-radius: 100%;
 	float: left;
 	margin-right: 15px;
-}
-
-.users_list{
-	font-size: 1.4rem;
-}
-
-.users_list h5{
-	font-size: 1.8rem;
+	width: 200px;
 }
 
 .title_image{
