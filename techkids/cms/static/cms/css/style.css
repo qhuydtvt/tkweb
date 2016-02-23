@@ -4,7 +4,6 @@
 	font-size: 18px;
 	letter-spacing: 0.5px;
 	padding-top: 50px;
-	overflow: hidden;
 }
 a{
 	color: #00A0C6;
@@ -197,10 +196,12 @@ footer.footer{
 
 section.block_section{
 	padding: 40px 0;
+	overflow: hidden;
 }
 
 section.page_title{
 	padding: 60px 0;
+	overflow: hidden;
 }
 
 section.stars {
