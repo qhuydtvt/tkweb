@@ -496,6 +496,7 @@ section.stars .section_title:after{
 	section.intro .container{
 		height: 100vh;
 	}
+	
 	.navbar-fixed-top.navbar_at_top{
 		background-color: transparent;
 		border-bottom: 1px solid transparent;

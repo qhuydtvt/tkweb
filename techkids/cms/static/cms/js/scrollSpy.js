@@ -1,4 +1,4 @@
-var TechKidsApp.scrollSpy = (function($, undefined){
+TechKidsApp.scrollSpy = (function($, undefined){
 	
 	var configs = {
 		skinWidth: 100,

@@ -1,6 +1,6 @@
 var TechKidsApp = (function($, undefined){
 	var configs = {
-		menuBreakPoint: 768;
+		menuBreakPoint: 768
 	}
 	
 	var menuOnHover = true;
