@@ -283,6 +283,12 @@ section.stars .section_title:after{
 	font-size: 4rem;
 }
 
+.article_title_wrapper{
+	margin: 20px 0;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
+
 .column_title{
 	padding-bottom: 15px;
 	margin-bottom: 10px;
