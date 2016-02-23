@@ -16,7 +16,7 @@ var TechKidsApp = (function($, undefined){
 	}
 	
 	var detectMenuModeChange = function(){
-		if($(window).width() < menuBreakPoint){
+		if($(window).width() < configs.menuBreakPoint){
 			if(menuOnHover){
 				$(".dropdown-toggle").each(function(){
 					$(this).removeClass("disabled");
