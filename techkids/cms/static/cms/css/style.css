@@ -194,14 +194,13 @@ footer.footer{
 	font-size: 2.3rem;
 }
 
-section.block_section{
-	padding: 40px 0;
+body > section{
 	overflow: hidden;
+	padding: 40px 0;
 }
 
 section.page_title{
 	padding: 60px 0;
-	overflow: hidden;
 }
 
 section.stars {
@@ -242,6 +241,7 @@ section.intro .container:before{
 	position: relative;
 	white-space: nowrap;
 	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .section_title:before,
@@ -268,6 +268,10 @@ section.stars .section_title{
 section.stars .section_title:before,
 section.stars .section_title:after{
 	border-top: 1px solid #fff;
+}
+
+.section_subtitle{
+	font-size: 4rem;
 }
 
 .column_title{
@@ -449,10 +453,6 @@ section.stars .section_title:after{
 
 .join_us{
 	padding: 50px 0;
-}
-
-.join_us h5{
-	font-size: 4rem;
 }
 
 .join_us .btn{

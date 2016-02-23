@@ -14,7 +14,11 @@ var TechKidsApp = (function($, undefined){
 	
 	var scrollThrotte = false;
 	var viewportHeight = 0;
+	var gotFade = false;
 	
+	/*
+	 * Public functions 
+	 */
 	var init = function(){
 		$(window).bind("resize", calculateViewportHeight);
 		calculateViewportHeight();
@@ -26,6 +30,10 @@ var TechKidsApp = (function($, undefined){
 		setTimeout(lateInitFadeElements, 100);
 	}
 	
+	
+	/* 
+	 * Private functions
+	 */
 	var calculateViewportHeight = function(){
 		viewportHeight = $(window).height() - configs.skinWidth;
 		if(viewportHeight < 0) viewportHeight = 0;
@@ -46,13 +54,17 @@ var TechKidsApp = (function($, undefined){
 			$("#main_nav").addClass("navbar_at_top");
 		}
 		
-		configs.animateClasses.forEach(function(theClass){
-			$("."+ theClass + configs.animateOffSuffix).each(function(){
-				if($(this).offset().top > $(window).scrollTop() && $(this).offset().top < $(window).scrollTop() + viewportHeight){
-					$(this).removeClass(theClass + configs.animateOffSuffix);
-				}
+		// Fades
+		if(gotFade)}{
+			configs.animateClasses.forEach(function(theClass){
+				$("."+ theClass + configs.animateOffSuffix).each(function(){
+					if($(this).offset().top > $(window).scrollTop() && $(this).offset().top < $(window).scrollTop() + viewportHeight){
+						$(this).removeClass(theClass + configs.animateOffSuffix);
+					}
+				});
 			});
-		});
+		}
+		
 	}
 	
 	var initFadeElements = function(){
@@ -71,6 +83,8 @@ var TechKidsApp = (function($, undefined){
 				$(this).addClass(configs.animateTransitionClass);
 			});
 		});
+		
+		gotFade = true;
 		
 		scrollSpy();
 	}
