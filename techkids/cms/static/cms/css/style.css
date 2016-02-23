@@ -506,6 +506,18 @@ section.stars .section_title:after{
 	width: 100%;
 }
 
+.course_summary p{
+	overflow: hidden;
+}
+
+.list-group-item-heading{
+	font-size: 1em;
+}
+
+.list-group-item-heading{
+	font-size: 0.6em;
+}
+
 @media screen and (min-width: 768px){
 	body{
 		padding-top: 0;
