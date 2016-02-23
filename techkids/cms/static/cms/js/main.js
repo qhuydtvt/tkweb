@@ -55,7 +55,7 @@ var TechKidsApp = (function($, undefined){
 		}
 		
 		// Fades
-		if(gotFade)}{
+		if(gotFade){
 			configs.animateClasses.forEach(function(theClass){
 				$("."+ theClass + configs.animateOffSuffix).each(function(){
 					if($(this).offset().top > $(window).scrollTop() && $(this).offset().top < $(window).scrollTop() + viewportHeight){

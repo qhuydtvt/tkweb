@@ -200,6 +200,7 @@ body > section{
 }
 
 section.page_title{
+	margin-top: 50px;
 	padding: 60px 0;
 }
 
