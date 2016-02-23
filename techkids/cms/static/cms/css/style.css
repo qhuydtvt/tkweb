@@ -502,6 +502,10 @@ section.stars .section_title:after{
 	font-size: 1.8rem;
 }
 
+.title_image{
+	width: 100%;
+}
+
 @media screen and (min-width: 768px){
 	body{
 		padding-top: 0;
