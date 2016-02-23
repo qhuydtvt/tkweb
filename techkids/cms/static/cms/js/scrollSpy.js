@@ -1,4 +1,4 @@
-var TechKidsApp = (function($, undefined){
+var TechKidsApp.scrollSpy = (function($, undefined){
 	
 	var configs = {
 		skinWidth: 100,
@@ -103,7 +103,3 @@ var TechKidsApp = (function($, undefined){
 		init: init,
 	}
 }(jQuery));
-
-$(document).ready(function(){
-		TechKidsApp.init();
-});
