@@ -48,7 +48,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="https://tkweb.herokuapp.com/cms/"><span class="brand_logo"><img src='{% static "cms/img/TechkidBrandColor.png"%}' alt="TechKids"/></span></a>
+					<a class="navbar-brand" href="{% url 'cms.views.index' %}"><span class="brand_logo"><img src='{% static "cms/img/TechkidBrandColor.png"%}' alt="TechKids"/></span></a>
 				</div>
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,7 +62,7 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Khóa học <span class="visible-xs-inline-block caret"></span></a>
+							<a href="{% url 'cms.views.courses' %}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Khóa học <span class="visible-xs-inline-block caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Lập trình iOS</a></li>
 								<li><a href="#">Lập trình Android</a></li>
