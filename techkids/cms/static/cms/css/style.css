@@ -78,8 +78,8 @@ blockquote footer{
 	font-size: 1.8rem;
 }
 
-body > *{
-	overflow: hidden;
+ol li{
+	margin-bottom: 10px;
 }
 
 .navbar{
@@ -130,6 +130,10 @@ body > *{
 	font-weight: 700;
 }
 
+.navbar_secondary input{
+	font-weight: 300;
+}
+
 .navbar_at_top .navbar_secondary{
 	background-color: rgba(34,34,34,0.5);
 }
@@ -174,6 +178,7 @@ body > *{
 footer.footer{
 	padding: 100px 0;
 	font-size: 1.4rem;
+	background-color: #f7f7f7;
 }
 
 .footer_logo{
@@ -192,6 +197,15 @@ footer.footer{
 
 .footer .socials_list{
 	font-size: 2.3rem;
+}
+
+body > section{
+	overflow: hidden;
+	padding: 40px 0;
+}
+
+section.page_title{
+	padding: 110px 0 60px;
 }
 
 section.stars {
@@ -224,10 +238,6 @@ section.intro .container:before{
 	height: 100%;
 }
 
-.about_us{
-	padding: 40px 0;
-}
-
 .section_title{
 	font-size: 2.3rem;
 	margin: 40px auto;
@@ -236,6 +246,7 @@ section.intro .container:before{
 	position: relative;
 	white-space: nowrap;
 	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .section_title:before,
@@ -262,6 +273,10 @@ section.stars .section_title{
 section.stars .section_title:before,
 section.stars .section_title:after{
 	border-top: 1px solid #fff;
+}
+
+.section_subtitle{
+	font-size: 4rem;
 }
 
 .column_title{
@@ -335,7 +350,6 @@ section.stars .section_title:after{
 }
 
 .partners{
-	padding: 40px 0;
 	background-color: #F7F7F7;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -373,10 +387,6 @@ section.stars .section_title:after{
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-}
-
-.teachers{
-	padding: 40px 0;
 }
 
 .teachers_list{
@@ -450,17 +460,9 @@ section.stars .section_title:after{
 	padding: 50px 0;
 }
 
-.join_us h5{
-	font-size: 4rem;
-}
-
 .join_us .btn{
 	margin: 40px 10px 0;
 	float: none;
-}
-
-.newsevent{
-	padding: 60px 0;
 }
 
 .news_thumbnail{
@@ -487,9 +489,14 @@ section.stars .section_title:after{
 		float: right;
 	}
 	
+	section.page_title{
+		padding: 150px 0 60px;
+	}
+	
 	section.intro .container{
 		height: 100vh;
 	}
+	
 	.navbar-fixed-top.navbar_at_top{
 		background-color: transparent;
 		border-bottom: 1px solid transparent;
@@ -507,7 +514,15 @@ section.stars .section_title:after{
 	.navbar_at_top .brand_logo{
 		background-image: url('../img/TechkidBrandWhite.png')
 	}
-
+	
+	.navbar .dropdown.open>a{
+		background: transparent;
+	}
+	
+	.dropdown.open:not(:hover) ul{
+		display: none;
+	}
+	
 	li.dropdown:hover .dropdown-menu{
 		display: block;
 		top: 90%;
