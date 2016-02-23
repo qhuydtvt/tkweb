@@ -491,6 +491,7 @@ section.stars .section_title:after{
 
 .price_tag{
 	font-size: 4rem;
+	margin-top: 20px;
 }
 
 .users_list{
