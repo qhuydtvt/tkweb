@@ -513,7 +513,15 @@ section.stars .section_title:after{
 	.navbar_at_top .brand_logo{
 		background-image: url('../img/TechkidBrandWhite.png')
 	}
-
+	
+	.dropdown.open{
+		background: transparent;
+	}
+	
+	.dropdown.open:not(:hover) ul{
+		display: none;
+	}
+	
 	li.dropdown:hover .dropdown-menu{
 		display: block;
 		top: 90%;
