@@ -514,7 +514,7 @@ section.stars .section_title:after{
 		background-image: url('../img/TechkidBrandWhite.png')
 	}
 	
-	.dropdown.open{
+	.dropdown.open>a{
 		background: transparent;
 	}
 	
