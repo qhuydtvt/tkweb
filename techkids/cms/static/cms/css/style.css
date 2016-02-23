@@ -127,6 +127,10 @@ blockquote footer{
 	font-weight: 700;
 }
 
+.navbar_secondary input{
+	font-weight: 300;
+}
+
 .navbar_at_top .navbar_secondary{
 	background-color: rgba(34,34,34,0.5);
 }
