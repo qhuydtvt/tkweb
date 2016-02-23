@@ -7,7 +7,6 @@ urlpatterns = [
     # Examples:
     # url(r'^$', 'techkids.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-    url(r'^node/', views.node, name="node"),
     url(r'^$', views.index, name="index"),
 	url(r'^about/', views.about, name="about"),
 ]
