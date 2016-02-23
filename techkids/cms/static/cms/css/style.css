@@ -4,6 +4,7 @@
 	font-size: 18px;
 	letter-spacing: 0.5px;
 	padding-top: 50px;
+	overflow: hidden;
 }
 a{
 	color: #00A0C6;
@@ -76,10 +77,6 @@ blockquote p{
 blockquote footer{
 	color: #000;
 	font-size: 1.8rem;
-}
-
-body > *{
-	overflow: hidden;
 }
 
 .navbar{
