@@ -285,7 +285,6 @@ section.stars .section_title:after{
 
 .article_title_wrapper{
 	margin: 40px 0;
-	background-color: #f7f7f7;
 }
 
 .column_title{
@@ -620,6 +619,9 @@ section.stars .section_title:after{
 }
 
 @media screen and (min-width: 992px ){
+	.fly_right_md{
+		float: right;
+	}
 	.about_values{
 		display: flex;
 		align-items: center;
