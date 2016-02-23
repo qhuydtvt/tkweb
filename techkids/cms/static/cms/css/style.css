@@ -63,6 +63,10 @@ hr{
 	margin: 40px 0;
 }
 
+hr.sub_divider{
+	margin: 10px 0;
+}
+
 blockquote{
 	border-left: 1px solid #00a0c6;
 }
@@ -476,8 +480,26 @@ section.stars .section_title:after{
 	width: 100%;
 }
 
-article .column_title{
+.articles_list .column_title{
 	margin-top: 0;
+}
+
+.price_tag{
+	font-size: 4rem;
+}
+
+.user_thumbnail{
+	border-radius: 100%;
+	float: left;
+	margin-right: 15px;
+}
+
+.users_list{
+	font-size: 1.4rem;
+}
+
+.users_list h5{
+	font-size: 1.8rem;
 }
 
 @media screen and (min-width: 768px){

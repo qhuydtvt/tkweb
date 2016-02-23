@@ -18,7 +18,7 @@ var TechKidsApp = (function($, undefined){
 	var detectMenuModeChange = function(){
 		if($(window).width() < configs.menuBreakPoint){
 			if(menuOnHover){
-				$(".dropdown-toggle").each(function(){
+				$("#main_nav .dropdown-toggle").each(function(){
 					$(this).removeClass("disabled");
 				});
 				
@@ -27,7 +27,7 @@ var TechKidsApp = (function($, undefined){
 		}
 		else{
 			if(!menuOnHover){
-				$(".dropdown-toggle").each(function(){
+				$("#main_nav .dropdown-toggle").each(function(){
 					$(this).addClass("disabled");
 				});
 				

@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^$', views.index, name="index"),
 	url(r'^about/', views.about, name="about"),
 	url(r'^courses/', views.courses, name="courses"),
+	url(r'^course/1337/', views.courses, name="courseSingle"),
 ]
