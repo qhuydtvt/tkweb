@@ -16,19 +16,19 @@ var TechKidsApp = (function($, undefined){
 	var detectMenuModeChange = function(){
 		if($(window).width() < menuBreakPoint){
 			if(menuOnHover){
-				$(".dropdown-toggle").each(){
+				$(".dropdown-toggle").each(function(){
 					$(this).removeClass("disabled");
 				}
 				menuOnHover = false;
-			}
+			});
 		}
 		else{
 			if(!menuOnHover){
-				$(".dropdown-toggle").each(){
+				$(".dropdown-toggle").each(function(){
 					$(this).addClass("disabled");
 				}
 				menuOnHover = true;
-			}
+			});
 		}
 	}
 	
