@@ -8,3 +8,7 @@ from django.template import loader
 def index(request):
     template = loader.get_template('cms/index.html')
     return HttpResponse(template.render(request))
+
+def about(request):
+    template = loader.get_template('cms/about_us.html')
+    return HttpResponse(template.render(request))
