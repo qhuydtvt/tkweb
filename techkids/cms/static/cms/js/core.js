@@ -3,7 +3,7 @@ var TechKidsApp = (function($, undefined){
 		menuBreakPoint: 768
 	}
 	
-	var menuOnHover = true;
+	var menuOnHover = false;
 	
 	var init = function(){
 		if(TechKidsApp.scrollSpy){
@@ -11,6 +11,8 @@ var TechKidsApp = (function($, undefined){
 		}
 		
 		$(window).resize(detectMenuModeChange);
+		
+		detectMenuModeChange();
 	}
 	
 	var detectMenuModeChange = function(){
@@ -18,17 +20,19 @@ var TechKidsApp = (function($, undefined){
 			if(menuOnHover){
 				$(".dropdown-toggle").each(function(){
 					$(this).removeClass("disabled");
-				}
+				});
+				
 				menuOnHover = false;
-			});
+			}
 		}
 		else{
 			if(!menuOnHover){
 				$(".dropdown-toggle").each(function(){
 					$(this).addClass("disabled");
-				}
+				});
+				
 				menuOnHover = true;
-			});
+			}
 		}
 	}
 	
