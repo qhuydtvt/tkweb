@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^$', views.index, name="index"),
 	url(r'^about/', views.about, name="about"),
 	url(r'^courses/', views.courses, name="courses"),
-	url(r'^course/', views.courseSingle, name="courseSingle"),
+	url(r'^course/([0-9]+)/$', views.courseSingle, name="courseSingle"),
 ]
