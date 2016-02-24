@@ -12,10 +12,15 @@ def index(request):
 def about(request):
     template = loader.get_template('cms/about_us.html')
     return HttpResponse(template.render(request))
-	
+
 def courses(request):
     template = loader.get_template('cms/courses.html')
     return HttpResponse(template.render(request))
+
+def contact(request):
+    template = loader.get_template('cms/contact.html')
+    return HttpResponse(template.render(request))
+
 
 def course_single(request, course_id):
     template = loader.get_template('cms/course_single.html')
