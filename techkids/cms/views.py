@@ -17,6 +17,6 @@ def courses(request):
     template = loader.get_template('cms/courses.html')
     return HttpResponse(template.render(request))
 
-def courseSingle(request, course_id):
+def course_single(request, course_id):
     template = loader.get_template('cms/course_single.html')
     return HttpResponse(template.render(request))
