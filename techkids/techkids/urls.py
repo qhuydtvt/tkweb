@@ -5,6 +5,7 @@ urlpatterns = [
     # Examples:
     # url(r'^$', 'techkids.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
+    url(r'', include('cms.urls'), name="cms"),
     url(r'^cms/', include('cms.urls'), name="cms"),
     url(r'^admin/', include(admin.site.urls), name="home"),
 ]
