@@ -216,10 +216,7 @@ section.stars {
 	background-clip: border-box;
 	background-attachment: fixed;
     background-color: #1D232E;
-    background-image: url("../img/met-stars.png");
-    background-repeat: repeat;
-    background-size: contain;
-	background-position: 0 -200px;
+    background-image: url("../img/Background.jpg");
 
 	color: #fff;
 }
@@ -309,7 +306,7 @@ section.stars .section_title:after{
 
 .column_title a:hover,
 .column_title a:focus{
-	color #000;
+	color: #000;
 }
 
 .see_more_link{
