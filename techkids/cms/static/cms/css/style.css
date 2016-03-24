@@ -17,7 +17,7 @@ a:focus{
 }
 
 .btn{
-	border-radius: 0;
+	border-radius: 4px;
 	border: 0 none;
 	font-size: 1.4rem;
 	font-weight: 700;
@@ -28,14 +28,13 @@ a:focus{
 
 .btn.btn-primary{
 	text-shadow: none;
-	background-color: #00A0C6;
 	background-image: none;
 	transition: background-color 0.3s, border-color 0.3s;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus{
-	background-color: #02BBE9;
+
 }
 
 .btn.btn-outline{
@@ -211,7 +210,33 @@ body > section{
 section.page_title{
 	padding: 60px 0;
 }
-
+.custom-button {
+    display: inline-block !important;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    margin: 10px;
+    border: none;
+	-webkit-user-select: none;
+	vertical-align: middle;
+    cursor: pointer;
+	text-decoration: none;
+}
+.buttons {
+	margin-top: -30px;
+    text-align: center;
+	border: 0;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+	display: block;
+}
 section.stars {
 	background-clip: border-box;
 	background-attachment: fixed;
@@ -460,11 +485,24 @@ section.stars .section_title:after{
 .socials_list a:focus{
 	color: #000;
 }
-
+.green-btn {
+    background: #1e9e6b;
+}
+.red-btn {
+    background: #e96656;
+}
 .join_us{
 	padding: 50px 0;
 }
-
+.btn {
+    border-radius: 0;
+    border: 0 none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 17px 50px;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
 .join_us .btn{
 	margin: 40px 10px 0;
 	float: none;

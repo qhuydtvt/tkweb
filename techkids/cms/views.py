@@ -23,5 +23,8 @@ def contact(request):
 
 
 def course_single(request, course_id):
-    template = loader.get_template('cms/course_single.html')
+    if course_id == 1:
+        template = loader.get_template('cms/course_single.html')
+    else:
+        template = loader.get_template('cms/course_android.html')
     return HttpResponse(template.render(request))
