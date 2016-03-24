@@ -23,8 +23,10 @@ def contact(request):
 
 
 def course_single(request, course_id):
-    if course_id == 1:
-        template = loader.get_template('cms/course_single.html')
-    else:
+    if course_id == '1':
+        template = loader.get_template('cms/course_ios.html')
+    elif course_id == '2':
         template = loader.get_template('cms/course_android.html')
+    elif course_id == '3':
+        template = loader.get_template('cms/course_c4e.html')
     return HttpResponse(template.render(request))
