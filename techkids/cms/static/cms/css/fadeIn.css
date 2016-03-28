@@ -27,20 +27,20 @@
 }
 
 .fade_delay_1{
-	transition-delay: .3s;
+	transition-delay: .2s;
 }
 .fade_delay_2{
-	transition-delay: .6s;
+	transition-delay: .4s;
 }
 .fade_delay_3{
-	transition-delay: .9s;
+	transition-delay: .6s;
 }
 .fade_delay_4{
-	transition-delay: 1.2s;
+	transition-delay: .8s;
 }
 .fade_delay_5{
-	transition-delay: 1.5s;
+	transition-delay: 1s;
 }
 .fade_delay_6{
-	transition-delay: 1.8s;
+	transition-delay: 1.2s;
 }
