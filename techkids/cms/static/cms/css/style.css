@@ -568,6 +568,11 @@ section.stars .section_title:after{
 	font-size: 2rem;
 }
 
+.profile_thumbnail{
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
 .user_thumbnail{
 	border-radius: 100%;
 	float: left;
@@ -576,7 +581,8 @@ section.stars .section_title:after{
 	overflow: hidden;
 }
 
-.user_thumbnail img{
+.user_thumbnail img,
+.profile_thumbnail img{
 	width: 100%;
 }
 

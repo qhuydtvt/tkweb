@@ -28,7 +28,7 @@ def course_single(request, course_id):
         template = loader.get_template('cms/course_android.html')
     elif course_id == '3':
         template = loader.get_template('cms/course_c4e.html')
-    else
+    else:
         template = loader.get_template('cms/courses.html')
     return HttpResponse(template.render(request))
 
