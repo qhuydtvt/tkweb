@@ -1,0 +1,79 @@
+{% extends "cms/base.html" %}
+{%load staticfiles %}
+
+{% block title %}TechKids - Thông tin giảng viên Tú Lê{% endblock %}
+
+{% block content %}
+<section id="page_title" class="page_title stars">
+	<div class="container">
+		<div class="row fade_up text-center">
+			<h3 class="section_title col-sm-5 col-xs-9">Thông tin giảng viên</h3>
+			<p class="section_subtitle">Tú Lê</p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<article class="row">
+      <div class="col-sm-2 col-sm-offset-2">
+        <div class="user_thumbnail"><img src="{% static "cms/img/uploads/2015/06/doanhtu-300x300.jpg" %}"/></div>
+        <ul>
+          <li><em>Số năm kinh nghiệm: </em>8 năm</li>
+          <li><em>Nơi sống: </em>Hà Nội</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <p>Project manager tại FPT Software</p>
+        <p>8 năm kinh nghiệm lập trình Android tại FPT Software, hiện tại đang là project manager.</p>
+        <p>6 năm kinh nghiệm làm dự án Android với khách hàng là các Startup tại Mỹ. Trong đó có hệ thống social network trong ngành Healthcare.</p>
+        <p>Chia sẻ của anh Tú về nghề Lập trình:</p>
+        <p>“Mình chỉ khuyên các bạn nên xem video này: <a href="https://www.youtube.com/watch?v=nKIu9yen5nc" target="_blank">https://www.youtube.com/watch?v=nKIu9yen5nc</a></p>
+        <p>Là một Lập trình viên, các bạn cần hiểu được sức mạnh của mình và giá trị to lớn mà các bạn tạo ra cho xã hội. Bây giờ hầu hết các dự án cộng đồng hay ngành về phúc lợi xã hội ở các nước phát triển đều nhờ đến Công Nghệ đặc biệt là Giáo dục, Y tế,… Thu nhập sẽ là một thứ đi theo sau nhưng gì các bạn tạo ra.</p>
+        <p>Thế nên khi giảng dạy tại TechKids, mình rất mong đem đến cái nhìn rộng mở hơn cho các bạn sinh viên Việt Nam, không chỉ câu chuyện về cơ hội thu nhập, mà còn lại việc các bạn có thể góp phần giúp Việt Nam, giúp thế giới này trở nên tốt đẹp hơn như thế nào.”</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="container articles_list">
+  <h3 class="section_title col-sm-5 col-xs-9">Các khóa học của TÚ LÊ</h3>
+
+  <article class="row">
+    <div class="col-sm-4">
+      <div class="news_thumbnail fade_scale">
+        <img src="http://techkids.edu.vn/wp-content/uploads/2015/10/code4everyone3.jpg"/>
+      </div>
+    </div>
+    <div class="col-sm-8 fade_left">
+      <h3 class="column_title"><a href="#">Code for everyone</a></h3>
+      <div>
+        <p>“Tất cả mọi người nên học Lập trình, bởi Lập trình dạy bạn cách tư duy” – Steve Jobs.</p>
+        <p>Nếu bạn coi máy tính và internet là một phần cuộc sống của mình, thì TechKids tin học Lập trình là học cách làm cuộc sống của bạn tốt đẹp hơn: Hiệu quả hơn, tiết kiệm thời gian, công sức, tiền bạc và thú vị hơn rất nhiều!</p>
+        <p>Nếu bạn hiểu rằng Công nghệ là tương lai của cả thế giới, thì TechKids tin học Lập trình là cách để mỗi chúng ta mở ra những cơ hội lớn trên toàn cầu, để Việt Nam bắt kịp với các nước trên thế giới nhanh hơn.</p>
+        <p>Vậy nên, TechKids tiên phong khởi động chương trình “CODE FOR EVERYONE” để giúp tất cả người Việt có cơ hội học Lập trình một cách dễ dàng, thân thiện, khác biệt và hiệu quả.</p>
+      </div>
+      <a href="#" class="see_more_link">Chi tiết <span class="fa fa-chevron-right" aria-hidden="true"></span></a>
+    </div>
+  </article>
+
+  <hr class="content_divider"></hr>
+
+  <article class="row">
+    <div class="col-sm-4">
+      <div class="news_thumbnail fade_scale">
+        <img src="http://techkids.edu.vn/wp-content/uploads/2015/06/ios-dev.jpg"/>
+      </div>
+    </div>
+    <div class="col-sm-8 fade_left">
+      <h3 class="column_title"><a href="#">Khoá học Lập trình iOS</a></h3>
+      <div>
+        <p>Chúng tôi không chỉ dạy về lập trình, chúng tôi mong muốn tạo ra thế hệ Lập trình viên xuất sắc!</p>
+        <p>Có đủ kỹ năng cần thiết để làm việc ở các công ty IT/dự án toàn cầu.</p>
+        <p>Tự làm sản phẩm, khởi nghiệp vừa và nhỏ</p>
+      </div>
+      <a href="#" class="see_more_link">Chi tiết <span class="fa fa-chevron-right" aria-hidden="true"></span></a>
+    </div>
+  </article>
+</div>
+{% endblock %}

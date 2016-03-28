@@ -21,7 +21,6 @@ def contact(request):
     template = loader.get_template('cms/contact.html')
     return HttpResponse(template.render(request))
 
-
 def course_single(request, course_id):
     if course_id == '1':
         template = loader.get_template('cms/course_ios.html')
@@ -29,4 +28,10 @@ def course_single(request, course_id):
         template = loader.get_template('cms/course_android.html')
     elif course_id == '3':
         template = loader.get_template('cms/course_c4e.html')
+    else
+        template = loader.get_template('cms/courses.html')
+    return HttpResponse(template.render(request))
+
+def instructor_single(request, instructor_id):
+    template = loader.get_template('cms/instructor.html')
     return HttpResponse(template.render(request))
