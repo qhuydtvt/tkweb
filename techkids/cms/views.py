@@ -21,6 +21,10 @@ def contact(request):
     template = loader.get_template('cms/contact.html')
     return HttpResponse(template.render(request))
 
+def portfolio(request):
+    template = loader.get_template('cms/portfolio.html')
+    return HttpResponse(template.render(request))
+
 def course_single(request, course_id):
     if course_id == '1':
         template = loader.get_template('cms/course_ios.html')

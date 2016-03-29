@@ -12,6 +12,7 @@ urlpatterns = [
 	url(r'^about/', views.about, name="about"),
 	url(r'^contact/', views.contact, name="contact"),
 	url(r'^courses/', views.courses, name="courses"),
+    url(r'^student-portfolio/', views.portfolio, name="portfolio"),
 	url(r'^course/([0-9]+)/$', views.course_single, name="course_single"),
     url(r'^instructor/([0-9]+)/$', views.instructor_single, name="instructor_single"),
 ]
