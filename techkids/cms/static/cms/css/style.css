@@ -640,6 +640,37 @@ section.stars .section_title:after{
 	border: 0 none;
 }
 
+.portfolio_item:nth-child(2n){
+	background-color: #ececec;
+}
+
+.portfolio_item h4{
+	margin-top: 40px;
+}
+
+.portfolio_iphone {
+	background: transparent url('../img/iPhone6.png') center center no-repeat;
+	padding: 8.1% 35% 9.2%;
+}
+
+.portfolio_iphone_horizontal{
+	background: transparent url('../img/iPhone6_Horizontal.png') center center no-repeat;
+	padding: 3.3% 19% 3.4% 20.2%;
+}
+
+.portfolio_demo {
+	background-size: contain;
+}
+
+.portfolio_demo img {
+	width: 100%;
+}
+
+.portfolio_technologies{
+	color: #02BBE9;
+	font-size: 2rem;
+}
+
 @media screen and (min-width: 768px){
 	body{
 		padding-top: 0;
